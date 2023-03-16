@@ -1,9 +1,9 @@
-<h1 align="center"> Teste Final Bolsista de Desenvolvimento Web</h1>
+<h1 align="center"> Teste Final Desenvolvedor Web (Back/Front-End) - Django/Python</h1>
 
-A empresa de energia gostou de seu código para o cálculo de economia, mas ela não pode entregá-lo para os clientes já que eles
-não possuem conhencimento em programação. Assim, resolveu contratá-lo para desenvolver um site para implementar essa lógica
-e disponibilizá-lo aos clientes. Você deverá usar a linguagem Python e o framework Django para desenvolver a aplicação e todo
-o código deve ser disponibilizado no Github para acompanhamento da empresa
+A empresa de energia gostou de seu código para o cálculo de economia, mas necessita de algumas alterações para
+disponibilizá-lo aos clientes. Assim, resolveu contratá-lo novamente para desenvolver essas novas funcionalidades.
+Você continuará o projeto anterior usando a linguagem Python e o framework Django e, após finalizado, todo o código 
+deve ser disponibilizado no Github para acompanhamento da empresa
 
 Sua aplicação deverá cumprir os seguintes requisitos:
 
@@ -13,7 +13,10 @@ Sua aplicação deverá cumprir os seguintes requisitos:
 - Calcular a economia baseada nos atributos do consumidor
 - Listar os consumidores e a economia em uma tabela para uso dos clientes
 - Permitir filtragem na tabela por tipo de consumidor e intervalo de consumo
-- EXTRA(Opcional): Permitir inclusão de consumidores por meio de formulário
+- Permitir inclusão de consumidores por meio de formulário
+- O formulário de cadastro deve preencher os campos de estado e cidade baseado no CEP. Para isso,
+você deverá usar a API gratuita https://viacep.com.br/
+- O documento do consumidor deve ser validado de acordo com o tipo. A validação pode ser no back ou no front-end.
 
 Mais detalhes de cada tarefa são dados nos arquivos do projeto base.
 
