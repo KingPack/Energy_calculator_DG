@@ -1,0 +1,12 @@
+{% block content %}
+    <h1>Economy Calculator Energy - Result</h1>
+        {% csrf_token %}
+        {% if result_calculator %}
+            <h2>Result</h2>
+            <p>Economia Anual: {{ result_calculator.annual_savings }} (kWh)</p>
+            <p>Economia Mensal: {{ result_calculator.monthly_savings }} (kWh)</p>
+            <p>Desconto Aplicado: {{ result_calculator.applied_discount }}%</p>
+            <p>Cobertura: {{ result_calculator.energy_coverage }}%</p>
+        {% endif %}
+    <a href="" class="btn btn-primary">Back to Index</a>
+{% endblock %}

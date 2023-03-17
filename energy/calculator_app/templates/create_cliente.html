@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastro de Cliente</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+        
+      </head>
+<body>
+  <h1>Cadastro de Cliente</h1>
+  <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="form-group">
+      <button type="button" id="btn-cep" class="btn btn-primary">Validate Zip Code</button>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#btn-cep').on('click', function() {
+        var cep = $('#id_code_zip').val();
+        if (cep.length === 8) {
+          $.ajax({
+            url: 'https://viacep.com.br/ws/'+ cep +'/json/',
+            dataType: 'json',
+            success: function(data) {
+              $('#id_city').val(data.localidade);
+              $('#id_state').val(data.uf);
+            }
+          });
+        } else {
+          alert('CEP inválido!');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
