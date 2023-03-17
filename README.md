@@ -38,5 +38,5 @@ Alem disso, deve-se considerar os seguintes percentuais de cobertura baseado no 
 *** Cobertura é o valor da energia que o consumidor irá receber da empresa de assinatura de energia em relação à energia consumida
 
 ## Conclusão
-Você terá 3h para desenvolver a aplicação e, após finalizada, a empresa precisa de um vídeo explicativo sobre o que foi feito
+Você terá 4h para desenvolver a aplicação e, após finalizada, a empresa precisa de um vídeo explicativo sobre o que foi feito
 e como a aplicação funciona. Faça um vídeo curto de 5 min descrevendo sua solução, tanto em termos técnicos quanto em relação ao produto final.
